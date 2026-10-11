@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Study Space | Pratik Singh</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#">✦ My Study Space</a>
+    <button id="themeBtn" class="theme-btn">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">YOUR SPACE. YOUR PACE.</p>
+      <h1>Welcome back,<br><span>Pratik Singh.</span></h1>
+      <p>Small steps today. Big progress tomorrow.</p>
+
+      <div class="progress-card">
+        <div class="progress-heading">
+          <span>Overall syllabus progress</span>
+          <strong id="overallPercent">0%</strong>
+        </div>
+        <div class="track">
+          <div class="fill" id="overallBar"></div>
+        </div>
+        <p id="overallText">0 chapters completed</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">YOUR LEARNING JOURNEY</p>
+          <h2>My Subjects 📚</h2>
+        </div>
+        <span class="pill">ICSE Class 10</span>
+      </div>
+      <div id="subjectsGrid" class="subject-grid"></div>
+      
+      <div id="chapterPanel" class="chapter-panel hidden"></div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">STAY ON TRACK</p>
+      <h2>Quick Tasks & Notes ✨</h2>
+      <form id="taskForm" class="task-form">
+        <input id="taskInput" type="text"
+          placeholder="e.g. Revise quadratic equations"
+          maxlength="200" required>
+        <button type="submit">+ Add Task</button>
+      </form>
+      <div id="taskList" class="task-list"></div>
+    </section>
+  </main>
+
+  <footer>MADE FOR PRATIK SINGH · ONE CHAPTER AT A TIME ✦</footer>
+</body>
+</html>
